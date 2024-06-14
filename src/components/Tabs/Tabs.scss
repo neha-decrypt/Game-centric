@@ -1,0 +1,167 @@
+.tabbing {
+  .nav {
+    li {
+      z-index: 1;
+
+      .nav-link {
+        color: #fff !important;
+        font-size: 16px;
+        font-weight: 700;
+
+        &.active {
+          background: none !important;
+          border-bottom: 8px solid #01f801;
+          border-radius: 0;
+          z-index: 1;
+        }
+      }
+    }
+  }
+
+  .nav::after {
+    content: "";
+    width: 100%;
+    height: 8px;
+    background: #000;
+    margin-top: -8px;
+  }
+
+  .tab-content {
+    .account {
+      .balance,
+      .converter {
+        position: relative;
+        background: linear-gradient(180deg, #000000 -56.64%, #3e3e3e 121.82%);
+        padding: 15px;
+        border-radius: 20px;
+        min-width: 365px;
+        min-height: 280px;
+        h5 {
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        .upper-box,
+        .lower-box {
+          background-color: #0e0e0e;
+          margin: 5px;
+          border-radius: 15px;
+          text-align: left;
+          padding: 10px 20px;
+          min-height: 108px;
+
+          .heading {
+            font-size: 12px;
+            font-weight: 700;
+            color: #01f801;
+          }
+
+          h1 {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 34px;
+
+            span {
+              font-size: 16px;
+              font-weight: 700;
+            }
+          }
+
+          label {
+            font-size: 12px;
+            font-weight: 400;
+          }
+
+          input {
+            background: transparent;
+            border: 1px solid #d5d5d7;
+            width: 129px;
+            padding: 8px 10px;
+            border-radius: 7px;
+            color: #fff;
+          }
+
+          button {
+            border: 0;
+            background: #01f801;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: 700;
+            margin: 0 8px;
+          }
+        }
+
+        .swap-icon {
+          position: absolute;
+          top: 53%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          cursor: pointer;
+        }
+      }
+
+      .transfer {
+        background: linear-gradient(180deg, #000000 -56.64%, #3e3e3e 121.82%);
+        padding: 15px;
+        border-radius: 20px;
+        min-width: 100%;
+        margin: 15px auto;
+
+        h5 {
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        .box {
+          background-color: #0e0e0e;
+          margin: 5px;
+          border-radius: 15px;
+          text-align: left;
+          padding: 10px 20px;
+          min-height: 100px;
+
+          .heading {
+            font-size: 12px;
+            font-weight: 700;
+            color: #01f801;
+          }
+
+          h1 {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 34px;
+
+            span {
+              font-size: 16px;
+              font-weight: 700;
+            }
+          }
+
+          label {
+            font-size: 12px;
+            font-weight: 400;
+          }
+
+          input, select {
+            background-color: #0e0e0e;
+            border: 1px solid #d5d5d7;
+            width: 129px;
+            padding: 8px 10px;
+            border-radius: 7px;
+            color: #fff;
+          }
+
+          button {
+            border: 0;
+            background: #01f801;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

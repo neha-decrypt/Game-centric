@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  position: relative
+}
+
+
+body.overflow_hidden {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #00000071; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3f3f3f77; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

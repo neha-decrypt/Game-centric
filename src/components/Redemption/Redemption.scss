@@ -1,0 +1,84 @@
+.box {
+
+    .item-box {
+        border-radius: 15px 15px 0px 0px;
+        background: #DE3CDE;
+        height: 150px;
+
+        .top-img-container {
+            height: 14px;
+            width: 30px;
+            margin: 0 auto;
+
+            svg {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+
+        .item-img-container {
+            height: 80px;
+            width: 80px;
+            margin: 24px auto;
+
+            svg {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .content-box {
+        border-radius: 0px 0px 15px 15px;
+        background: #000;
+        text-align: justify;
+        padding: 25px;
+        min-height: 170px;
+        box-sizing: content-box;
+
+        h5 {
+            font-size: 18px;
+            font-weight: 700;
+            text-align: justify;
+        }
+
+        .see-more-btn {
+            background-color: #01f801;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 3px 5px;
+        }
+
+        .redeem-btn {
+            background-color: transparent;
+            border: 1px solid #01f801;
+            outline: none;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 3px 5px;
+            color: #01f801;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background-color: #01f801;
+                color: #000;
+            }
+
+            &:disabled {
+                cursor: not-allowed;
+                background-color: #01f80187;
+                color: #d5d5d7;
+                border: 1px solid #01f80187;
+            }
+        }
+
+
+    }
+}

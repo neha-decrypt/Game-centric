@@ -1,0 +1,136 @@
+.loader-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6509803922);
+    bottom: 0;
+    z-index: 10001;
+    height: 100vh;
+
+    .loader-body {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 5px !important;
+    }
+
+    p {
+        position: relative;
+        top: 51%;
+        left: 59%;
+        transform: translate(-57%, -51%);
+        width: 100% !important;
+    }
+}
+
+
+.modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6509803922);
+    bottom: 0;
+    z-index: 10001;
+    height: 100vh;
+
+    .modal-body {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        width: 80%;
+        background: linear-gradient(180deg, #000 0%, #3E3E3E 100%);
+
+        .close-icon {
+            position: absolute;
+            right: 2%;
+            cursor: pointer;
+            top: 2%;
+        }
+    }
+}
+
+
+.payment-popup-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6509803922);
+    bottom: 0;
+    z-index: 99999;
+    height: 100vh;
+    .payment-popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(180deg, #000000 -56.64%, #3e3e3e 121.82%);
+        padding: 50px 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+        color: #fff !important;
+    
+    
+        .popup-content {
+            text-align: center;
+        }
+    
+        .step-container {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+    
+        .clock-loader, .check-fill{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .step-number {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    
+        .step-number.completed {
+            background-color: #01f801;
+            color: #fff;
+            border-color: #01f801;
+        }
+    
+        .step-description {
+            text-align: left;
+        }
+    
+        .description {
+            margin-bottom: 20px;
+        }
+    
+        button {
+            padding: 10px 20px;
+            background-color: #01f801;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    
+        button:hover {
+            background-color: #01f801;
+        }
+    }
+}
